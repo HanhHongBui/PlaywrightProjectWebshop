@@ -1,0 +1,11 @@
+{
+    "firstName": "Charles",
+    "lastName":"Xavier",
+    "email":"Xavier@gmail.com",
+    "country":"Germany",
+    "city":"Munchen",
+    "address1":"123 Baker Str", 
+    "zipCode": "100000",
+    "phoneNumber": "8412345678",
+    "faxNumber": "987654321"
+}

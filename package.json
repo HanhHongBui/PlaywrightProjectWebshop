@@ -1,0 +1,23 @@
+{
+  "name": "playwrightproject",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test-local": "npx cross-env ENV=local npx playwright test",
+    "test-prod": "npx cross-env ENV=prod npx playwright test"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.41.1",
+    "@types/node": "^20.10.6",
+    "allure-commandline": "^2.26.0",
+    "allure-playwright": "^2.11.1"
+  },
+  "dependencies": {
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.3.2"
+  }
+}

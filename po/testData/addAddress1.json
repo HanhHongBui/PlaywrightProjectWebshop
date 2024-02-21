@@ -1,0 +1,11 @@
+{
+    "firstName": "Erik",
+    "lastName":"Lehnsherr",
+    "email":"Lehnsherr@gmail.com",
+    "country":"Germany",
+    "city":"Berlin",
+    "address1":"567 Baker Str", 
+    "zipCode": "200000",
+    "phoneNumber": "8512345678",
+    "faxNumber": "987654321"
+}
