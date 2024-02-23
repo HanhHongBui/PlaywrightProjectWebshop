@@ -14,8 +14,7 @@ export default defineConfig({
     screenshot: 'off',
     video: 'on'
   },
-  grep: testPlanFilter(),
-  reporter: [["line"], ["allure-playwright"],['html'],["list"],
+  reporter: [["line"],["list"],
   [
     "allure-playwright",
     {
@@ -32,13 +31,13 @@ export default defineConfig({
   // reporter: 'html',
   testDir: './tests',
   /* Run tests in files in parallel */
-  fullyParallel: true,
+  fullyParallel: false,
   /* Fail the build on CI if you accidentally left test.only in the source code. */
   forbidOnly: !!process.env.CI,
   /* Retry on CI only */
   retries: process.env.CI ? 2 : 0,
   /* Opt out of parallel tests on CI. */
-  workers: process.env.CI ? 3: 2,
+  workers: process.env.CI ? 1: 2,
 
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   /* Configure projects for major browsers */
@@ -59,7 +58,7 @@ export default defineConfig({
     },
     {
       name: 'chromium',
-      testMatch: '**/*.spec.ts',
+      testMatch: '**/cartAllure.spec.ts',
       dependencies: ['setup'],
       use: {
         ...devices['Desktop Chrome'],

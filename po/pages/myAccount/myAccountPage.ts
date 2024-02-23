@@ -1,6 +1,5 @@
 import {expect} from "@playwright/test";
 import { BasePage } from "../../base/basePage";
-// import addAddress from "../../testData/addAddress.json";
 import  MyAccountSelectors from "./myAccount.selector";
 export default class MyAccountPage extends BasePage{
     myAccountSelectors = new MyAccountSelectors();

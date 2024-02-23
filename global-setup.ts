@@ -1,5 +1,5 @@
 import { test, expect } from './po/base/baseTests';
-    test('Log in to page successfully', async ({ page,baseURL, homePage, loginPage },testInfo) => {
+    test('Log in to page successfully', async ({ page, baseURL, homePage, loginPage },testInfo) => {
       await test.step("I go to Log in page", async () => {
         await homePage.navigate(`${baseURL}/login`);
         await homePage.screenshot(testInfo);
